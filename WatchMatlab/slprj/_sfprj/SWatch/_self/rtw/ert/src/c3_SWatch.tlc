@@ -1,0 +1,162 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  1 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   24 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "sfEvent"\
+      Description  "ActiveChartEvent"\
+      SFName       ""\
+      Path         ""\
+    }\
+    ChartData {\
+      Name         "is_AlarmMng"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "AlarmMng"\
+    }\
+    ChartData {\
+      Name         "is_active_AlarmMng"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         "AlarmMng"\
+    }\
+    ChartData {\
+      Name         "is_Control"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "Control"\
+    }\
+    ChartData {\
+      Name         "is_active_Control"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         "Control"\
+    }\
+    ChartData {\
+      Name         "is_timermode"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "Control.timermode"\
+    }\
+    ChartData {\
+      Name         "is_Timer"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "Control.timermode.Timer"\
+    }\
+    ChartData {\
+      Name         "is_swatchmode"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "Control.swatchmode"\
+    }\
+    ChartData {\
+      Name         "is_alarmmode"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "Control.alarmmode"\
+    }\
+    ChartData {\
+      Name         "is_TimeCount"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "TimeCount"\
+    }\
+    ChartData {\
+      Name         "is_active_TimeCount"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         "TimeCount"\
+    }\
+    ChartData {\
+      Name         "is_Timeset"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "Control.Timeset"\
+    }\
+    ChartData {\
+      Name         "hours"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "hours"\
+    }\
+    ChartData {\
+      Name         "minutes"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "minutes"\
+    }\
+    ChartData {\
+      Name         "seconds"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "seconds"\
+    }\
+    ChartData {\
+      Name         "tenths"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "tenths"\
+    }\
+    ChartData {\
+      Name         "Ahours"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "Ahours"\
+    }\
+    ChartData {\
+      Name         "Aminutes"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "Aminutes"\
+    }\
+    ChartData {\
+      Name         "Aseconds"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "Aseconds"\
+    }\
+    ChartData {\
+      Name         "Atenths"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "Atenths"\
+    }\
+    ChartData {\
+      Name         "Alarm_h"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "Alarm_h"\
+    }\
+    ChartData {\
+      Name         "Alarm_m"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "Alarm_m"\
+    }\
+    ChartData {\
+      Name         "Alarm_state"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "Alarm_state"\
+    }\
+    ChartData {\
+      Name         "mutex"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "mutex"\
+    }\
+  }
+  %return ChartDataElements
+%endfunction
